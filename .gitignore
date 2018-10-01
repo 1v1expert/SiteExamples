@@ -1,3 +1,6 @@
 .idea/
 venv/
 conf.json
+__pycache__/
+dobeauty/__pycache__/
+*.pyc
