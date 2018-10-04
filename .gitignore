@@ -1,7 +1,6 @@
-*.pyc
-.idea/
+.idea
+__pycache__
+.pyc
 venv/
 conf.json
-dobeauti/__pycache__/*
-__pycache__/
-*/__pycache__/
+
