@@ -21,6 +21,18 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" href="{% static 'img/favicon.ico' %}">
   </head>
+  <style>
+    .category-grid p {
+    color: #96a2b2;
+    font-size: 12px;
+    line-height: 18px;
+    }
+    img {
+      /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+      /*width: 60%;*/
+      height: auto;
+    }
+  </style>
 
   <body class="nav-on-header">
 
@@ -51,23 +63,24 @@
         <!-- Navigation menu -->
         <ul class="nav-menu">
           <li>
-            <a class="active" href="index.html">Home</a>
+            <a href="index.html">Стрижка</a>
             <ul>
-              <li><a class="active" href="/">Version 1</a></li>
-              <li><a href="/">Version 2</a></li>
+              <!--class="active" -->
+              <li><a href="/">Мужская</a></li>
+              <li><a href="/">Женская</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Position</a>
+            <a href="/">Массаж</a>
             <ul>
-              <li><a href="job-list-1.html">Browse jobs - 1</a></li>
-              <li><a href="job-list-2.html">Browse jobs - 2</a></li>
-              <li><a href="job-list-3.html">Browse jobs - 3</a></li>
-              <li><a href="job-detail.html">Job detail</a></li>
-              <li><a href="job-add.html">Post a job</a></li>
-              <li><a href="job-manage.html">Manage jobs</a></li>
+              <li><a href="/">Классический</a></li>
+              <li><a href="/">Лечебный</a></li>
+              <li><a href="/">Расслабляющий</a></li>
+              <li><a href="/">Тибетский</a></li>
+              <li><a href="/">Хиромассаж</a></li>
+              <li><a href="/">Стоунтерапия</a></li>
             </ul>
-          </li>
+          </li><!--
           <li>
             <a href="#">Resume</a>
             <ul>
@@ -96,7 +109,7 @@
               <li><a href="page-typography.html">Typography</a></li>
               <li><a href="page-ui-elements.html">UI elements</a></li>
             </ul>
-          </li>
+          </li>-->
         </ul>
         <!-- END Navigation menu -->
 
@@ -116,16 +129,16 @@
           <br><br><br>
           <form class="header-job-search">
             <div class="input-keyword">
-              <input type="text" class="form-control" placeholder="Job title, skills, or company">
+              <input type="text" class="form-control" placeholder="Наименование услуги или салона">
             </div>
 
             <div class="input-location">
-              <input type="text" class="form-control" placeholder="City, state or zip">
+              <input type="text" class="form-control" placeholder="Город или область">
             </div>
 
             <div class="btn-search">
               <button class="btn btn-primary" type="submit">Найти салон</button>
-              <a href="job-list.html">Advanced Job Search</a>
+              <a href="/">Расширенный поиск</a>
             </div>
           </form>
         </div>
@@ -140,7 +153,7 @@
 
 
 
-      <!-- Recent jobs -->
+      <!-- Recent jobs --><!-- Close section
       <section>
         <div class="container">
           <header class="section-header">
@@ -148,9 +161,9 @@
             <h2>Recent jobs</h2>
           </header>
 
-          <div class="row item-blocks-connected">
+          <div class="row item-blocks-connected">-->
 
-            <!-- Job item -->
+            <!-- Job item --><!--
             <div class="col-xs-12">
               <a class="item-block" href="job-detail.html">
                 <header>
@@ -165,11 +178,11 @@
                   </div>
                 </header>
               </a>
-            </div>
+            </div>-->
             <!-- END Job item -->
 
 
-            <!-- Job item -->
+            <!-- Job item --><!--
             <div class="col-xs-12">
               <a class="item-block" href="job-detail.html">
                 <header>
@@ -184,10 +197,10 @@
                   </div>
                 </header>
               </a>
-            </div>
+            </div>-->
             <!-- END Job item -->
 
-            <!-- Job item -->
+            <!-- Job item --><!--
             <div class="col-xs-12">
               <a class="item-block" href="job-detail.html">
                 <header>
@@ -205,7 +218,7 @@
             </div>
             <!-- END Job item -->
 
-            <!-- Job item -->
+            <!-- Job item --><!--
             <div class="col-xs-12">
               <a class="item-block" href="job-detail.html">
                 <header>
@@ -223,7 +236,7 @@
             </div>
             <!-- END Job item -->
 
-            <!-- Job item -->
+            <!-- Job item --><!--
             <div class="col-xs-12">
               <a class="item-block" href="job-detail.html">
                 <header>
@@ -239,7 +252,7 @@
                 </header>
               </a>
             </div>
-            <!-- END Job item -->
+            <!-- END Job item --><!--
 
           </div>
 
@@ -249,37 +262,63 @@
       </section>
       <!-- END Recent jobs -->
 
-
-      <!-- Facts -->
-      <section class="bg-img bg-repeat no-overlay section-sm" style="background-image: url(assets/img/bg-pattern.png)">
+      <!-- Categories -->
+      <section class="bg-alt">
         <div class="container">
+          <header class="section-header">
+            <span>Категории</span>
+            <h2>Популярные категории</h2>
+            <p>Здесь подобраны самые популярные категории</p>
+          </header>
 
-          <div class="row">
-            <div class="counter col-md-3 col-sm-6">
-              <p><span data-from="0" data-to="6890"></span>+</p>
-              <h6>Jobs</h6>
-            </div>
+          <div class="category-grid">
+            <a href="/"><!--
+              <i class="fa fa-laptop"></i>-->
+              <img class="center-block" src="https://whealth.ru/media/images/page/2013/8/29/fb0a1d9396034c188529bf10fc71cb3a.jpg" alt="how it works">
+              <h6>Мезотерапия</h6>
+              <p>Среди процедур для волос очень популярна Olaplex. Суть ее заключается в том, что специальный состав Olaplex добавляется в краситель, а инновационная запатентованная молекула помогает сделать процесс любого окрашивания и обесцвечивания волос щадящим. Как результат вы получаете мягкие, здоровые, блестящие и прочные волосы, которые остаются таковыми на протяжении еще долгого времени. В общем, с Olaplex любые эксперименты с цветом будут вашим волосам нипочем.</p>
+            </a>
 
-            <div class="counter col-md-3 col-sm-6">
-              <p><span data-from="0" data-to="1200"></span>+</p>
-              <h6>Members</h6>
-            </div>
+            <a href="/">
+              <!--
+              <i class="fa fa-line-chart"></i>-->
+              <img class="center-block" src="https://whealth.ru/media/images/page/2013/8/29/82733426790348f286a2a3c41105a927.jpg" alt="how it works">
+              <h6>Эндермологический массаж</h6>
+              <p>Кто бы мог подумать, это банальное LPG. Запатентованный термин, который подразумевает, что процедура выполняется на оборудовании французской марки LPG. Вакуумно-роллерная методика направлена на борьбу с целлюлитом и избыточными жировыми отложениями. Болевые ощущения во время LPG – это нормально. Однако синяков на следующее утро быть не должно. Исключение – девушки с повышенной ломкостью сосудов. И никакой речи не может идти о кровоподтеках – тут уже без исключений.</p>
+            </a>
 
-            <div class="counter col-md-3 col-sm-6">
-              <p><span data-from="0" data-to="36800"></span>+</p>
-              <h6>Resume</h6>
-            </div>
+            <a href="/">
+              <!--<i class="fa fa-medkit"></i>-->
+              <img class="center-block" src="https://whealth.ru/media/images/page/2013/8/29/57bd794e05084297a9c95d30032629b5.jpg" alt="how it works">
+              <h6>Лимфодренаж</h6>
+              <p>Этот термин может характеризовать и средства ухода, и салонные манипуляции, если все они направлены на вывод лишней жидкости из межклеточного пространства. Лимфодренаж бывает мануальным (речь идет о массаже, который выполняет специалист) или аппаратным (прессотерапия либо миостимуляция). Вообще процедура незамысловатая, но крайне полезная. При условии, что ты не страдаешь тромбофлебитом, почечными заболеваниями и болезнями сердца, тромбозом.</p>
+            </a>
 
-            <div class="counter col-md-3 col-sm-6">
-              <p><span data-from="0" data-to="15400"></span>+</p>
-              <h6>Company</h6>
-            </div>
+            <a href="/">
+              <!--<i class="fa fa-cutlery"></i>-->
+              <img class="center-block" src="https://whealth.ru/media/images/page/2013/8/29/980f273422ce41038db45f6352abeba6.jpg" alt="how it works">
+              <h6>Ионофорез</h6>
+              <p>Еще большой вопрос, кто старше, этот метод или соседка по словарю – дарсонвализация. Перекочевал в косметологию из традиционной медицины. Грамотные физиотерапевты и сегодня этим вроде бы примитивным прибором с двумя проводками избавят от чего угодно: мелких морщин, сухости кожи, отеков, расширенных капилляров. Все завязано на полярно заряженных частицах (катионах и анионах, если кто забыл) и постоянном гальваническом токе. </p>
+            </a>
+
+            <a href="/">
+              <!--<i class="fa fa-newspaper-o"></i>-->
+              <img class="center-block" src="https://whealth.ru/media/images/page/2013/8/29/7743ec238c53486cab3fafec64fdec84.jpg" alt="how it works">
+              <h6>Фракционный лифтинг</h6>
+              <p>Или фраксель – это методика омоложения эрбиевым лазером. Компания Fraxel первой стала использовать установку, оснащенную сканером, который бы задавал лучу траекторию движения. Однако сегодня далеко не одна она предлагает фракционную методику омоложения. В результате нововведения от Fraxel удалось снизить травматичность процедуры и уменьшить срок восстановления по сравнению с традиционной шлифовкой, а результат оставить прежним.</p>
+            </a>
+
+            <a href="/">
+              <!--<i class="fa fa-institution"></i>-->
+              <img class="center-block" src="https://whealth.ru/media/images/page/2013/8/29/b10b50d443f5485ab67ce200c7281788.jpg" alt="how it works">
+              <h6>Термаж</h6>
+              <p>Запатентованное название радиочастотного лифтинга. Самый популярный аппарат, на котором его выполняют, – ThermaCool. Аналогию провести несложно. Это мероприятие болезненное и дорогое. Как говорят многие специалисты, цена не оправдывает средства. Когда первые аппараты для радиочастотного лифтинга появились на российском рынке, цена за процедуру доходила до 200 000 рублей</p>
+            </a>
           </div>
 
         </div>
       </section>
-      <!-- END Facts -->
-
+      <!-- END Categories -->
 
       <!-- How it works -->
       <section>
@@ -288,90 +327,69 @@
           <div class="col-sm-12 col-md-6">
             <header class="section-header text-left">
               <span>Workflow</span>
-              <h2>How it works</h2>
+              <h2>Делай красоту !</h2>
             </header>
 
-            <p class="lead">Pellentesque et pulvinar orci. Suspendisse sed euismod purus. Pellentesque nunc ex, ultrices eu enim non, consectetur interdum nisl. Nam congue interdum mauris, sed ultrices augue lacinia in. Praesent turpis purus, faucibus in tempor vel, dictum ac eros.</p>
-            <p>Nulla quis felis et orci luctus semper sit amet id dui. Aenean ultricies lectus nunc, vel rhoncus odio sagittis eu. Sed at felis eu tortor mattis imperdiet et sed tortor. Nullam ac porttitor arcu. Vivamus tristique elit id tempor lacinia. Donec auctor at nibh eget tincidunt. Nulla facilisi. Nunc condimentum dictum mattis.</p>
+            <p class="lead">Мы сервис, предоставляющий услуги по поиску и бронированию любых услуг красоты.
+              Do beuatify – это простой и удобный способ онлайн-записи в компании и к частным специалистам.
+Теперь Вы можете записаться в компанию или к частному специалисту в любое удобное для вас время (например, пока Вы едете в общественном транспорте или сидите на скучном совещании). </p>
+            <p>Вы самостоятельно сможете выбрать мастера, услугу и подходящее время для записи, так как все наши партнеры (компании и частные специалисты) постоянно ведут электронный журнал и своевременно отражают в нем записи, что исключает возникновение накладок.</p>
 
 
             <br><br>
-            <a class="btn btn-primary" href="page-typography.html">Learn more</a>
+            <a class="btn btn-primary" href="/">подробнее</a>
           </div>
 
           <div class="col-sm-12 col-md-6 hidden-xs hidden-sm">
             <br>
-            <img class="center-block" src="assets/img/how-it-works.png" alt="how it works">
+            <img class="center-block" src="{% static 'img/how-it-works.png' %}" alt="how it works">
           </div>
 
         </div>
       </section>
       <!-- END How it works -->
 
-
-      <!-- Categories -->
-      <section class="bg-alt">
+      <!-- Facts -->
+      <section class="bg-img bg-repeat no-overlay section-sm" style="background-image: url({% static 'img/bg-pattern.png' %})">
         <div class="container">
-          <header class="section-header">
-            <span>Categories</span>
-            <h2>Popular categories</h2>
-            <p>Here's the most popular categories</p>
-          </header>
 
-          <div class="category-grid">
-            <a href="job-list-1.html">
-              <i class="fa fa-laptop"></i>
-              <h6>Technology</h6>
-              <p>Designer, Developer, IT Service, Front-end developer, Project management</p>
-            </a>
+          <div class="row">
+            <div class="counter col-md-3 col-sm-6">
+              <p><span data-from="0" data-to="6890"></span>+</p>
+              <h6>Услуг</h6>
+            </div>
 
-            <a href="job-list-2.html">
-              <i class="fa fa-line-chart"></i>
-              <h6>Accounting</h6>
-              <p>Finance, Tax service, Payroll manager, Book keeper, Human resource</p>
-            </a>
+            <div class="counter col-md-3 col-sm-6">
+              <p><span data-from="0" data-to="1200"></span>+</p>
+              <h6>Салонов</h6>
+            </div>
 
-            <a href="job-list-3.html">
-              <i class="fa fa-medkit"></i>
-              <h6>Medical</h6>
-              <p>Doctor, Nurse, Hospotal, Dental service, Massagist</p>
-            </a>
+            <div class="counter col-md-3 col-sm-6">
+              <p><span data-from="0" data-to="36800"></span>+</p>
+              <h6>Клиентов</h6>
+            </div>
 
-            <a href="job-list-1.html">
-              <i class="fa fa-cutlery"></i>
-              <h6>Food</h6>
-              <p>Restaurant, Food service, Coffe shop, Cashier, Waitress</p>
-            </a>
-
-            <a href="job-list-2.html">
-              <i class="fa fa-newspaper-o"></i>
-              <h6>Media</h6>
-              <p>Journalism, Newspaper, Reporter, Writer, Cameraman</p>
-            </a>
-
-            <a href="job-list-3.html">
-              <i class="fa fa-institution"></i>
-              <h6>Government</h6>
-              <p>Federal, Law, Human resource, Manager, Biologist</p>
-            </a>
+            <div class="counter col-md-3 col-sm-6">
+              <p><span data-from="0" data-to="15400"></span>+</p>
+              <h6>Компаний</h6>
+            </div>
           </div>
 
         </div>
       </section>
-      <!-- END Categories -->
-
+      <!-- END Facts -->
 
       <!-- Newsletter -->
       <section class="bg-img text-center" style="background-image: url({% static 'img/bg-facts.jpg'%})">
         <div class="container">
-          <h2><strong>Subscribe</strong></h2>
-          <h6 class="font-alt">Get weekly top new jobs delivered to your inbox</h6>
+          <h2><strong>Подписывайся</strong></h2>
+          <h6 class="font-alt">Чтобы получать ежеденедельные рассылки</h6>
           <br><br>
           <form class="form-subscribe" action="#">
             <div class="input-group">
-              <input type="text" class="form-control input-lg" placeholder="Your eamil address">
+              <input type="text" class="form-control input-lg" placeholder="Ваш email">
               <span class="input-group-btn">
-                <button class="btn btn-success btn-lg" type="submit">Subscribe</button>
+                <button class="btn btn-success btn-lg" type="submit">Подписаться</button>
               </span>
             </div>
           </form>
@@ -391,29 +409,31 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">An employment website is a web site that deals specifically with employment or careers. Many employment websites are designed to allow employers to post job requirements for a position to be filled and are commonly known as job boards. Other employment sites offer employer reviews, career and job-search advice, and describe different job descriptions or employers. Through a job website a prospective employee can locate and fill out a job application.</p>
+            <h6>О нас</h6>
+            <p class="text-justify">Мы сервис, предоставляющий услуги по поиску и бронированию любых услуг красоты.
+              Do beuatify – это простой и удобный способ онлайн-записи в компании и к частным специалистам.
+Теперь Вы можете записаться в компанию или к частному специалисту в любое удобное для вас время (например, пока Вы едете в общественном транспорте или сидите на скучном совещании).</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Company</h6>
+            <h6>Do beuatify</h6>
             <ul class="footer-links">
-              <li><a href="page-about.html">About us</a></li>
-              <li><a href="page-typography.html">How it works</a></li>
-              <li><a href="page-faq.html">Help center</a></li>
-              <li><a href="page-typography.html">Privacy policy</a></li>
-              <li><a href="page-contact.html">Contact us</a></li>
+              <li><a href="/">О нас</a></li>
+              <li><a href="/">Как это работает</a></li>
+              <li><a href="/">Помощь</a></li>
+              <li><a href="/">Конфидециально</a></li>
+              <li><a href="/">Контакты</a></li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Trendeing jobs</h6>
+            <h6>Требуются</h6>
             <ul class="footer-links">
-              <li><a href="job-list.html">Front-end developer</a></li>
-              <li><a href="job-list.html">Android developer</a></li>
-              <li><a href="job-list.html">iOS developer</a></li>
-              <li><a href="job-list.html">Full stack developer</a></li>
-              <li><a href="job-list.html">Project administrator</a></li>
+              <li><a href="/">Front-end developer</a></li>
+              <li><a href="/">Android developer</a></li>
+              <li><a href="/">iOS developer</a></li>
+              <li><a href="/">Full stack developer</a></li>
+              <li><a href="/">Project administrator</a></li>
             </ul>
           </div>
         </div>
